@@ -1,7 +1,3 @@
--- Active: 1776610823911@@localhost@3306@smitdb
-
-SELECT * FROM employees;
-
 CREATE TABLE employees (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     
@@ -34,8 +30,3 @@ CREATE TABLE employees (
         REFERENCES employees(employee_id)
         ON DELETE SET NULL
 );
-
-INSERT INTO employees 
-(first_name, last_name, email, phone_number, hire_date, job_title, department, salary)
-VALUES
-('Smit', 'Roy', 'smit@example.com', '9876543210', '2024-01-15', 'Software Developer', 'IT', 45000)
